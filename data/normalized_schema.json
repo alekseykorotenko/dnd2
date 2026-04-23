@@ -1,0 +1,110 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "D&D 2024 Normalized Game Data Schema",
+  "description": "Architectural schema for a highly scalable, non-redundant D&D 2024 database.",
+  "definitions": {
+    "ability": {
+      "type": "string",
+      "enum": ["str", "dex", "con", "int", "wis", "cha"]
+    },
+    "feature_ref_list": {
+      "type": "array",
+      "items": { "type": "string", "description": "Lowercase slug/ID of a feature defined in features.json" }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "features": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["name", "description"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" }
+        }
+      },
+      "description": "The master dictionary of all mechanical features. All other entities refer to these keys."
+    },
+    "species": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "feature_ids"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "size": { "type": "string", "enum": ["Small", "Medium", "Large"] },
+          "speed": { "type": "integer" },
+          "feature_ids": { "$ref": "#/definitions/feature_ref_list" },
+          "subtypes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "feature_ids"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "feature_ids": { "$ref": "#/definitions/feature_ref_list" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "backgrounds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "asi_options", "feat_id"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "asi_options": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/ability" },
+            "minItems": 3,
+            "maxItems": 3,
+            "description": "The 3 ability scores available for +2/+1 selection."
+          },
+          "feat_id": { "type": "string", "description": "ID of an Origin feat." },
+          "skill_ids": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "hit_die", "progression"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "hit_die": { "type": "integer" },
+          "primary_abilities": { "type": "array", "items": { "$ref": "#/definitions/ability" } },
+          "progression": {
+            "type": "object",
+            "patternProperties": {
+              "^[1-9][0-9]*$": { "$ref": "#/definitions/feature_ref_list" }
+            },
+            "description": "Level as key, list of feature IDs granted at that level."
+          }
+        }
+      }
+    },
+    "feats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "category"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "category": { "type": "string", "enum": ["Origin", "General", "Epic Boon", "Fighting Style"] },
+          "level": { "type": "integer", "default": 1 },
+          "feature_id": { "type": "string", "description": "Link to description in features.json" }
+        }
+      }
+    }
+  }
+}

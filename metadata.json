@@ -1,0 +1,6 @@
+{
+  "name": "D&D 2024 Character Builder",
+  "description": "A full-stack Dungeons & Dragons 2024 character builder with a React frontend and Express backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

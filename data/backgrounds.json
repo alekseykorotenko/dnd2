@@ -1,0 +1,306 @@
+[
+  {
+    "id": "acolyte",
+    "name_ua": "Прислужник",
+    "description": "Ви присвятили своє життя служінню в храмі та вивченню божественних догматів.",
+    "ability_bonuses": {
+      "options": ["wisdom", "intelligence", "charisma"],
+      "default_distribution": {
+        "wisdom": 2,
+        "charisma": 1
+      }
+    },
+    "origin_feat": {
+      "id": "magic_initiate",
+      "name_ua": "Присвячений у магію"
+    },
+    "skill_proficiencies": ["insight", "religion"],
+    "tool_proficiencies": ["calligraphers_supplies"],
+    "equipment": ["Священний символ", "Книга молитов", "5 паличок пахощів", "Ряса прислужника", "15 ЗМ"]
+  },
+  {
+    "id": "artisan",
+    "name_ua": "Ремісник",
+    "description": "Ви навчилися створювати чудові речі й торгувати своїми виробами.",
+    "ability_bonuses": {
+      "options": ["strength", "dexterity", "intelligence"],
+      "default_distribution": {
+        "intelligence": 2,
+        "dexterity": 1
+      }
+    },
+    "origin_feat": {
+      "id": "crafter",
+      "name_ua": "Ремісник"
+    },
+    "skill_proficiencies": ["investigation", "persuasion"],
+    "tool_proficiencies": ["artisans_tools"],
+    "equipment": ["Набір ремісничих інструментів", "Лист від гільдії", "Дорожній одяг", "Мішечок з 15 ЗМ"]
+  },
+  {
+    "id": "charlatan",
+    "name_ua": "Шарлатан",
+    "description": "Ви вмієте прикидатися кимось іншим і знаходити підхід до людей для власної вигоди.",
+    "ability_bonuses": {
+      "options": ["dexterity", "constitution", "charisma"],
+      "default_distribution": {
+        "charisma": 2,
+        "dexterity": 1
+      }
+    },
+    "origin_feat": {
+      "id": "skilled",
+      "name_ua": "Вмілий"
+    },
+    "skill_proficiencies": ["deception", "sleight_of_hand"],
+    "tool_proficiencies": ["forgery_kit"],
+    "equipment": ["Вишуканий одяг", "Набір для гримування", "Шулерські кубики", "15 ЗМ"]
+  },
+  {
+    "id": "criminal",
+    "name_ua": "Злочинець",
+    "description": "Ви маєте досвід порушення закону, крадіжок та співпраці у тіньовому світі.",
+    "ability_bonuses": {
+      "options": ["dexterity", "constitution", "intelligence"],
+      "default_distribution": {
+        "dexterity": 2,
+        "intelligence": 1
+      }
+    },
+    "origin_feat": {
+      "id": "alert",
+      "name_ua": "Пильний"
+    },
+    "skill_proficiencies": ["sleight_of_hand", "stealth"],
+    "tool_proficiencies": ["thieves_tools"],
+    "equipment": ["Лом", "Темний одяг з капюшоном", "Злодійські інструменти", "16 ЗМ"]
+  },
+  {
+    "id": "entertainer",
+    "name_ua": "Артист",
+    "description": "Ваше покликання — розважати натовп і приносити радість своїми виступами.",
+    "ability_bonuses": {
+      "options": ["dexterity", "constitution", "charisma"],
+      "default_distribution": {
+        "charisma": 2,
+        "dexterity": 1
+      }
+    },
+    "origin_feat": {
+      "id": "musician",
+      "name_ua": "Музикант"
+    },
+    "skill_proficiencies": ["acrobatics", "performance"],
+    "tool_proficiencies": ["musical_instrument"],
+    "equipment": ["Музичний інструмент", "Костюм", "Дрібничка від фаната", "15 ЗМ"]
+  },
+  {
+    "id": "farmer",
+    "name_ua": "Фермер",
+    "description": "Ви виросли на землі, обробляючи її під палючим сонцем. Ваше тіло загартоване важкою працею.",
+    "ability_bonuses": {
+      "options": ["strength", "constitution", "wisdom"],
+      "default_distribution": {
+        "strength": 2,
+        "constitution": 1
+      }
+    },
+    "origin_feat": {
+      "id": "tough",
+      "name_ua": "Міцний"
+    },
+    "skill_proficiencies": ["animal_handling", "nature"],
+    "tool_proficiencies": ["carpenters_tools"],
+    "equipment": ["Залізний горщик", "Лопата", "Повсякденний одяг", "Ціпок", "14 ЗМ"]
+  },
+  {
+    "id": "guard",
+    "name_ua": "Охоронець",
+    "description": "Ви захищали порядок у місті чи фортеці, стояли на варті під час довгих нічних змін.",
+    "ability_bonuses": {
+      "options": ["strength", "constitution", "intelligence"],
+      "default_distribution": {
+        "strength": 2,
+        "constitution": 1
+      }
+    },
+    "origin_feat": {
+      "id": "alert",
+      "name_ua": "Пильний"
+    },
+    "skill_proficiencies": ["athletics", "perception"],
+    "tool_proficiencies": ["gaming_set"],
+    "equipment": ["Спис", "Знак охорони", "Комплект ігрових карт", "Уніформа", "14 ЗМ"]
+  },
+  {
+    "id": "guide",
+    "name_ua": "Провідник",
+    "description": "Ви знайомі з дикою природою та допомагаєте мандрівникам знаходити правильний шлях.",
+    "ability_bonuses": {
+      "options": ["dexterity", "constitution", "wisdom"],
+      "default_distribution": {
+        "wisdom": 2,
+        "dexterity": 1
+      }
+    },
+    "origin_feat": {
+      "id": "magic_initiate",
+      "name_ua": "Присвячений у магію"
+    },
+    "skill_proficiencies": ["survival", "stealth"],
+    "tool_proficiencies": ["cartographers_tools"],
+    "equipment": ["Намет", "Карта околиць", "Дорожній одяг", "Лук та стріли", "14 ЗМ"]
+  },
+  {
+    "id": "hermit",
+    "name_ua": "Відсамітник",
+    "description": "Ви жили далеко від цивілізації, шукаючи відповіді в тиші та спокої.",
+    "ability_bonuses": {
+      "options": ["constitution", "wisdom", "charisma"],
+      "default_distribution": {
+        "wisdom": 2,
+        "constitution": 1
+      }
+    },
+    "origin_feat": {
+      "id": "healer",
+      "name_ua": "Цілитель"
+    },
+    "skill_proficiencies": ["medicine", "religion"],
+    "tool_proficiencies": ["herbalism_kit"],
+    "equipment": ["Сувій з таємницею", "Тепла ковдра", "Набір травника", "Повсякденний одяг", "15 ЗМ"]
+  },
+  {
+    "id": "merchant",
+    "name_ua": "Торговець",
+    "description": "Ви подорожували світом, купуючи та продаючи товари, навчилися домовлятися з будь-ким.",
+    "ability_bonuses": {
+      "options": ["constitution", "intelligence", "charisma"],
+      "default_distribution": {
+        "charisma": 2,
+        "intelligence": 1
+      }
+    },
+    "origin_feat": {
+      "id": "lucky",
+      "name_ua": "Щасливчик"
+    },
+    "skill_proficiencies": ["animal_handling", "persuasion"],
+    "tool_proficiencies": ["navigators_tools"],
+    "equipment": ["Рахункова книга", "Одяг мандрівного торговця", "Мішок з інвентарем", "22 ЗМ"]
+  },
+  {
+    "id": "noble",
+    "name_ua": "Аристократ",
+    "description": "Ви народилися у багатстві та привілеях, обертаючись у вищих колах суспільства.",
+    "ability_bonuses": {
+      "options": ["strength", "intelligence", "charisma"],
+      "default_distribution": {
+        "charisma": 2,
+        "intelligence": 1
+      }
+    },
+    "origin_feat": {
+      "id": "skilled",
+      "name_ua": "Вмілий"
+    },
+    "skill_proficiencies": ["history", "persuasion"],
+    "tool_proficiencies": ["gaming_set"],
+    "equipment": ["Дорогий одяг", "Печатка роду", "Сувій на родовід", "Гаманець з 25 ЗМ"]
+  },
+  {
+    "id": "sage",
+    "name_ua": "Вчений",
+    "description": "Ви присвятили час читанню стародавніх фоліантів і збереженню знань.",
+    "ability_bonuses": {
+      "options": ["constitution", "intelligence", "wisdom"],
+      "default_distribution": {
+        "intelligence": 2,
+        "wisdom": 1
+      }
+    },
+    "origin_feat": {
+      "id": "magic_initiate",
+      "name_ua": "Присвячений у магію"
+    },
+    "skill_proficiencies": ["arcana", "history"],
+    "tool_proficiencies": ["calligraphers_supplies"],
+    "equipment": ["Чорнильниця та перо", "Книга з легендами", "Лист-запрошення до університету", "Одяг вченого", "18 ЗМ"]
+  },
+  {
+    "id": "sailor",
+    "name_ua": "Моряк",
+    "description": "Ви роками борознили моря, зустрічаючи шторми та морських чудовиськ.",
+    "ability_bonuses": {
+      "options": ["strength", "dexterity", "wisdom"],
+      "default_distribution": {
+        "strength": 2,
+        "dexterity": 1
+      }
+    },
+    "origin_feat": {
+      "id": "tavern_brawler",
+      "name_ua": "Трактирний забіяка"
+    },
+    "skill_proficiencies": ["athletics", "perception"],
+    "tool_proficiencies": ["navigators_tools"],
+    "equipment": ["50 футів шовкової мотузки", "Талісман на вдачу", "Короткий меч", "Одяг моряка", "14 ЗМ"]
+  },
+  {
+    "id": "scribe",
+    "name_ua": "Писар",
+    "description": "Ваше життя пройшло в архівах, де ви копіювали і впорядковували сувої та літописи.",
+    "ability_bonuses": {
+      "options": ["dexterity", "intelligence", "wisdom"],
+      "default_distribution": {
+        "intelligence": 2,
+        "dexterity": 1
+      }
+    },
+    "origin_feat": {
+      "id": "skilled",
+      "name_ua": "Вмілий"
+    },
+    "skill_proficiencies": ["investigation", "perception"],
+    "tool_proficiencies": ["calligraphers_supplies"],
+    "equipment": ["Окуляри (або лупа)", "Перо", "Чистий пергамент", "Одяг", "15 ЗМ"]
+  },
+  {
+    "id": "soldier",
+    "name_ua": "Солдат",
+    "description": "Ви знайомі з дисципліною строю і бачили жорстокі битви на своєму віку.",
+    "ability_bonuses": {
+      "options": ["strength", "dexterity", "constitution"],
+      "default_distribution": {
+        "strength": 2,
+        "constitution": 1
+      }
+    },
+    "origin_feat": {
+      "id": "savage_attacker",
+      "name_ua": "Дикий атакувальник"
+    },
+    "skill_proficiencies": ["athletics", "intimidation"],
+    "tool_proficiencies": ["gaming_set"],
+    "equipment": ["Символ рангу", "Трофей ворога", "Кістки або карти", "Армійський одяг", "14 ЗМ"]
+  },
+  {
+    "id": "wayfarer",
+    "name_ua": "Мандрівник (Безпритульний)",
+    "description": "Ви постійно в русі, не маючи дому, і звикли покладатися на свою скритність і хитрість.",
+    "ability_bonuses": {
+      "options": ["dexterity", "wisdom", "charisma"],
+      "default_distribution": {
+        "dexterity": 2,
+        "wisdom": 1
+      }
+    },
+    "origin_feat": {
+      "id": "lucky",
+      "name_ua": "Щасливчик"
+    },
+    "skill_proficiencies": ["insight", "stealth"],
+    "tool_proficiencies": ["thieves_tools"],
+    "equipment": ["Спальний мішок", "Карта міста", "Таємний сховок в каптурі", "16 ЗМ"]
+  }
+]

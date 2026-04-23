@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "D&D 2024 Character Builder Data Schema",
+  "description": "Standardized data structures for D&D 2024 Species, Backgrounds, Classes, Feats, and Weapon Masteries.",
+  "definitions": {
+    "ability": {
+      "type": "string",
+      "enum": ["str", "dex", "con", "int", "wis", "cha"]
+    },
+    "feature_list": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "species": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "traits"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "size": { "type": "string", "enum": ["Small", "Medium", "Large"] },
+          "speed": { "type": "integer" },
+          "traits": { "$ref": "#/definitions/feature_list" },
+          "subtypes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "traits": { "$ref": "#/definitions/feature_list" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "backgrounds": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "asi_options", "origin_feat_id"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "asi_options": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/ability" },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "origin_feat_id": { "type": "string" },
+          "skill_proficiencies": { "type": "array", "items": { "type": "string" } },
+          "tool_proficiencies": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "classes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "hit_die", "primary_abilities", "features_by_level"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "hit_die": { "type": "integer" },
+          "primary_abilities": { "type": "array", "items": { "$ref": "#/definitions/ability" } },
+          "features_by_level": {
+            "type": "object",
+            "patternProperties": {
+              "^[1-9][0-9]*$": { "$ref": "#/definitions/feature_list" }
+            }
+          },
+          "subclasses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "features_by_level"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "features_by_level": {
+                  "type": "object",
+                  "patternProperties": {
+                    "^[1-9][0-9]*$": { "$ref": "#/definitions/feature_list" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "feats": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "category"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "category": { "type": "string", "enum": ["Origin", "General", "Epic Boon", "Fighting Style"] },
+          "level_requirement": { "type": "integer" },
+          "description": { "type": "string" },
+          "asi_bonus": {
+            "type": "object",
+            "properties": {
+              "amount": { "type": "integer" },
+              "options": { "type": "array", "items": { "$ref": "#/definitions/ability" } }
+            }
+          }
+        }
+      }
+    },
+    "weapon_masteries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "applicable_weapons": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,219 @@
+[
+  {
+    "id": "alert",
+    "name_ua": "Пильний",
+    "description": "Бонус до Ініціативи дорівнює Бонусу Майстерності. Додатково можна змінити місце ініціативи після кидка зі згодним союзником.",
+    "requirements": "Рівень: 1 (Передісторія / Людина)",
+    "category": "Origin"
+  },
+  {
+    "id": "crafter",
+    "name_ua": "Ремісник",
+    "description": "3 навички використання реміснових інструментів. При купівлі товарів (не магічних) у торговців знижка 20%.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "healer",
+    "name_ua": "Цілитель",
+    "description": "Набір цілителя відновлює ПЗ (Використовуючи Кості ПЗ (Hit Die) союзника). Магічний та клінічний хіл перекидається при 1.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "lucky",
+    "name_ua": "Щасливчик",
+    "description": "Отримання Пунктів Удачі (Кількість дорівнює Proficiency Bonus). Витрать пункт, щоб отримати Перевагу чи нав'язати Перешкоду атаці.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "magic_initiate",
+    "name_ua": "Присвячений у магію",
+    "description": "Знання 2 Фокусів і одного 1-го рівня з конкретних класів (Клірик/Друїд/Маг).",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "musician",
+    "name_ua": "Музикант",
+    "description": "Роздача Героїчного натхнення (Heroic Inspiration) на коротких/довгих відпочинках групі.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "savage_attacker",
+    "name_ua": "Дикий атакувальник",
+    "description": "Раз в хід, завдаючи шкоди зброєю: кидок кубику шкоди подвоюється і вибирається кращий.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "skilled",
+    "name_ua": "Вмілий",
+    "description": "Ви отримуєте одразу три будь-які нові володіння (Skill або Інструмент).",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "tavern_brawler",
+    "name_ua": "Трактирний забіяка",
+    "description": "Неозброєний урон 1d4. Можливість відкидати противника на 5 фт без спасу. Реролл шкоди при викиді 1.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "tough",
+    "name_ua": "Міцний",
+    "description": "Отримання екстра 2ХП на КОЖЕН існуючий та майбутній рівень.",
+    "requirements": "Рівень: 1",
+    "category": "Origin"
+  },
+  {
+    "id": "ability_score_improvement",
+    "name_ua": "Покращення Характеристик",
+    "description": "+2 до однієї характеристики або по +1 до двох характеристик (Макс. капітал 20).",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "actor",
+    "name_ua": "Актор",
+    "description": "+1 до Харизми. Автоматичне володіння (Performance / Deception). Скили на копіювання чужих голосів і мімікриювання без помилок.",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "athlete",
+    "name_ua": "Атлет",
+    "description": "+1 до Сили / Спритності. Стрибки використовують лише 5 фт підготовки, а підняття на лазянні чи з землі - лише 5 фт руху.",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "charger",
+    "name_ua": "Тягач (Charger)",
+    "description": "+1 Str/Dex. Ривок і атака. На 10 фт руху дає вам +1d8 бонус до шкоди ПЛЮС штовхання без перевірок ворога.",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "crossbow_expert",
+    "name_ua": "Експерт з арбалетів",
+    "description": "+1 Dex. Жодних проблем з перезарядкою. Подвійний постріл як 'Dual Wield'. Можливість стріляти в мілі зоні 5 фт БЕЗ ПЕРЕШКОДИ (ОБОВ'ЯЗКОВО).",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "crusher",
+    "name_ua": "Митець дробіння (Crusher)",
+    "description": "+1 Str/Con. Булави та молоти (Bludgeoning): відкидає ціль при вдалому ударі на 5 фт в будь який бік. Crit Strike дає Перевагу наступній атаці.",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "dual_wielder",
+    "name_ua": "Озброєний до зубів (Бій двома зброями)",
+    "description": "+1 Str/Dex. Витягання ДВОХ клінків одразу. Бонус дія для екстра удару зі зброї без тегу 'Легка'(Light feature).",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "elemental_adept",
+    "name_ua": "Знавець Стихій",
+    "description": "+1 Int/Wis/Cha. Обраний магічний тип (напр. Вогонь) більше не сприймає(OPIР-RESISTANCE) ворогів. 1-ки на кубиках стають 2-ками.",
+    "requirements": "Рівень: 4+ (Магічний клас)",
+    "category": "General"
+  },
+  {
+    "id": "elven_accuracy",
+    "name_ua": "Ельфійська Точність",
+    "description": "+1 Dex/Int/Wis/Cha. ТРИ кубики при Перевазі (на Декстериті або Магію) замість ДВОХ - суперкритикал стан (Тільки Elves).",
+    "requirements": "Рівень: 4+ (Ельф)",
+    "category": "General"
+  },
+  {
+    "id": "great_weapon_master",
+    "name_ua": "Майстер важкої зброї",
+    "description": "+1 Str. Якщо ви бьєте Важкою(Heavy), ви ДОДАЄТЕ СВІЙ ПРОФІШЕНСІ БОНУС до шкоди(D&D 2024 update: Без мінус 5 штрафів). Кріт=Екстра Атака бонусом.",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "heavily_armored",
+    "name_ua": "Важкий Захисник",
+    "description": "+1 Str. Отримання володіння Heavy брoнею (Armor).",
+    "requirements": "Рівень: 4+ (Обов'язкова Передумова Середня Броня)",
+    "category": "General"
+  },
+  {
+    "id": "polearm_master",
+    "name_ua": "Майстер держакової зброї",
+    "description": "+1 Str/Dex. Урон з древка списів як Бонусна дія (1d4 + mod). Можливість (Реакція) атакувати того, хто ПІДІЙШОВ В ЗОНУ ВПЛИВУ(Reach).",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "sharpshooter",
+    "name_ua": "Влучний Стрілець",
+    "description": "+1 Dex. Жодних недоліків від довгої дальності; ЖОДНОГО Захисту(Cover) для ворога (до повного укриття). Стріляє без перешкод у ближньому бою.",
+    "requirements": "Рівень: 4+",
+    "category": "General"
+  },
+  {
+    "id": "spell_sniper",
+    "name_ua": "Магічний Снайпер",
+    "description": "+1 Int/Wis/Cha. Фокуси б'ють вдвічі далі. Вороги не можуть використовувати 1/2 або 3/4 укриття як Захист від КБ-атак (Spells).",
+    "requirements": "Рівень: 4+ (Спеллкстер)",
+    "category": "General"
+  },
+  {
+    "id": "war_caster",
+    "name_ua": "Бойовий Чаклун",
+    "description": "+1 Int/Wis/Cha. ПЕРЕВАГА(Advantage) на Концентрацію Спеллів(Concentration). Реакція магією/спеллом(наприклад Toll of Dead) як Opportunity Attack.",
+    "requirements": "Рівень: 4+ (Спеллкстер)",
+    "category": "General"
+  },
+  {
+    "id": "fs_archery",
+    "name_ua": "Бойовий стиль: Стрільба з лука",
+    "description": "Ви отримуєте бонус +2 до кидків атаки, які ви робите за допомогою зброї далекого бою.",
+    "requirements": "Риса Стилю Бою",
+    "category": "Fighting Style"
+  },
+  {
+    "id": "fs_defense",
+    "name_ua": "Бойовий стиль: Оборона",
+    "description": "Ви отримуєте бонус +1 до КБ, поки носите будь-який обладунок.",
+    "requirements": "Риса Стилю Бою",
+    "category": "Fighting Style"
+  },
+  {
+    "id": "fs_dueling",
+    "name_ua": "Бойовий стиль: Дуелянт",
+    "description": "Коли ви тримаєте в одній руці зброю ближнього бою і не тримаєте іншої зброї, ви отримуєте бонус +2 до кидків шкоди цієї зброї.",
+    "requirements": "Риса Стилю Бою",
+    "category": "Fighting Style"
+  },
+  {
+    "id": "fs_great_weapon_fighting",
+    "name_ua": "Бойовий стиль: Бій великою зброєю",
+    "description": "Коли у вас випадає 1 або 2 на кубику шкоди при атаці дворучною зброєю ближнього бою, ви можете перекинути кубик (ви повинні використовувати новий результат).",
+    "requirements": "Риса Стилю Бою",
+    "category": "Fighting Style"
+  },
+  {
+    "id": "fs_protection",
+    "name_ua": "Бойовий стиль: Захист",
+    "description": "Коли істота, яку ви бачите, атакує ціль, іншу ніж ви, що знаходиться в межах 5 футів від вас, ви можете використати реакцію, щоб нав'язати перешкоду на кидок атаки (ви повинні тримати щит).",
+    "requirements": "Риса Стилю Бою",
+    "category": "Fighting Style"
+  },
+  {
+    "id": "fs_two_weapon_fighting",
+    "name_ua": "Бойовий стиль: Бій двома зброями",
+    "description": "Коли ви робите атаку другою рукою, ви можете додати свій модифікатор характеристики до шкоди цієї атаки.",
+    "requirements": "Риса Стилю Бою",
+    "category": "Fighting Style"
+  }
+]
